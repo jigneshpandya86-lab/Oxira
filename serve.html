@@ -3,307 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who We Serve - Corporate & Event Water Solutions | Oxira Surat</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --bisleri-green: #008A45;
-            --bisleri-dark: #006837;
-            --bisleri-light: #f4fbf7;
-            --text-main: #333333;
-            --text-light: #666666;
-            --white: #ffffff;
-            --border-grey: #e0e0e0;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: var(--text-main);
-            background: var(--white);
-            line-height: 1.6;
-        }
-
-        /* --- Navigation --- */
-        header {
-            background: var(--white);
-            border-bottom: 1px solid var(--border-grey);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-weight: 900;
-            font-size: 26px;
-            color: var(--bisleri-green);
-            text-transform: uppercase;
-        }
-
-        .nav-links { display: flex; list-style: none; gap: 30px; }
-        .nav-links a { 
-            text-decoration: none; 
-            color: var(--text-main); 
-            font-weight: 500; 
-            font-size: 14px; 
-            text-transform: uppercase;
-        }
-        .nav-links a.active { color: var(--bisleri-green); }
-
-        /* --- Page Header --- */
-        .page-header {
-            margin-top: 65px;
-            padding: 100px 20px 60px;
-            background: linear-gradient(180deg, var(--bisleri-light) 0%, #ffffff 100%);
-            text-align: center;
-        }
-
-        .page-header h1 {
-            font-size: 42px;
-            color: var(--bisleri-dark);
-            font-weight: 900;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-        }
-
-        .page-header p {
-            max-width: 700px;
-            margin: 0 auto;
-            color: var(--text-light);
-            font-size: 18px;
-        }
-
-        /* --- Industries Grid --- */
-        .industries-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-        }
-
-        .industry-card {
-            border: 1px solid var(--border-grey);
-            padding: 40px;
-            transition: 0.3s;
-            background: var(--white);
-        }
-
-        .industry-card:hover {
-            border-color: var(--bisleri-green);
-            box-shadow: 0 10px 30px rgba(0, 138, 69, 0.05);
-        }
-
-        .industry-card h2 {
-            font-size: 24px;
-            color: var(--bisleri-green);
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
-        .industry-card p {
-            color: var(--text-light);
-            margin-bottom: 20px;
-            font-size: 15px;
-        }
-
-        .benefit-tags {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .benefit-tags li {
-            background: var(--bisleri-light);
-            color: var(--bisleri-dark);
-            padding: 5px 12px;
-            font-size: 12px;
-            font-weight: 700;
-            border-radius: 2px;
-            text-transform: uppercase;
-        }
-
-        /* --- Business Partnership Section --- */
-        .partnership-section {
-            background: #1a1a1a;
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .partnership-grid {
-            max-width: 1200px;
-            margin: 50px auto 0;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-        }
-
-        .partner-item h3 {
-            color: var(--bisleri-green);
-            font-size: 20px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        .partner-item p {
-            font-size: 14px;
-            color: #999;
-        }
-
-        /* --- Footer --- */
-        footer {
-            background: #f8f9fa;
-            border-top: 1px solid var(--border-grey);
-            padding: 60px 20px 20px;
-        }
-
-        .footer-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 40px;
-        }
-
-        .btn-green {
-            background: var(--bisleri-green);
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            font-weight: 700;
-            border-radius: 4px;
-            display: inline-block;
-            margin-top: 20px;
-            text-transform: uppercase;
-        }
-
-        @media (max-width: 768px) {
-            .industries-grid, .partnership-grid, .footer-grid { grid-template-columns: 1fr; }
-            .page-header h1 { font-size: 32px; }
-        }
-    </style>
+    <title>Who We Serve | Oxira</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">OXIRA</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="serve.html" class="active">Who We Serve</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <a href="index.html" class="logo">OXIRA</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="custom-labels.html">Custom Labels</a></li>
+            <li><a href="serve.html">Who We Serve</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section class="page-header">
-        <h1>Client Sectors</h1>
-        <p>Reliable Bulk Water Supply for Gujarat’s Leading Businesses and Celebrations.</p>
-    </section>
-
-    <section class="industries-grid">
-        <div class="industry-card">
+<section class="container">
+    <h1 style="text-align: center; font-size: 2.5rem;">Industries We Serve</h1>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">We provide bulk supply and tailored hydration solutions across various sectors in Gujarat.</p>
+    
+    <div class="grid-2">
+        <div class="card">
             <h2>Weddings & Events</h2>
-            <p>From large-scale wedding receptions to intimate gatherings, we provide premium 200ml and 500ml bottles with personalized labeling options.</p>
-            <ul class="benefit-tags">
-                <li>Custom Labels</li>
-                <li>Bulk Discounts</li>
-                <li>Express Delivery</li>
-            </ul>
-            <a href="contact.html" class="btn-green">Get Quote</a>
+            <p>Add a touch of elegance to your special day with custom-branded 200ml bottles for your guests.</p>
         </div>
+        <div class="card">
+            <h2>Hotels & Restaurants (HoReCa)</h2>
+            <p>Elevate your guest experience with premium 500ml bottles, carrying your hotel's distinct branding.</p>
+        </div>
+        <div class="card">
+            <h2>Corporate Offices</h2>
+            <p>Ensure your employees and clients stay hydrated with pure, safe, BIS-certified water delivered directly to your office.</p>
+        </div>
+        <div class="card">
+            <h2>Retailers & Supermarkets</h2>
+            <p>Stock standard Oxira branded bottles to offer your customers high-quality hydration on the go.</p>
+        </div>
+    </div>
+</section>
 
-        <div class="industry-card">
-            <h2>Offices & Corporate</h2>
-            <p>Scheduled supply for conference rooms, visitor lounges, and employee hydration. We manage recurring deliveries so you never run out.</p>
-            <ul class="benefit-tags">
-                <li>Scheduled Supply</li>
-                <li>Monthly Invoicing</li>
-                <li>GST Compliant</li>
-            </ul>
-            <a href="contact.html" class="btn-green">Corporate Enquiry</a>
-        </div>
-
-        <div class="industry-card">
-            <h2>Hotels & Restaurants</h2>
-            <p>Partnering with HORECA sectors to provide BIS certified water that complements your dining standards. Premium 500ml glass-alternative bottles.</p>
-            <ul class="benefit-tags">
-                <li>Daily Logistics</li>
-                <li>Premium Packaging</li>
-                <li>Inventory Support</li>
-            </ul>
-            <a href="contact.html" class="btn-green">Partner With Us</a>
-        </div>
-
-        <div class="industry-card">
-            <h2>Catering Services</h2>
-            <p>Flexible supply for party plots and catering firms. We handle the heavy lifting and timing synchronization for your event schedules.</p>
-            <ul class="benefit-tags">
-                <li>Event Sync</li>
-                <li>High Volume</li>
-                <li>Priority Service</li>
-            </ul>
-            <a href="contact.html" class="btn-green">Order Bulk</a>
-        </div>
-    </section>
-
-    <section class="partnership-section">
-        <h2 style="text-transform: uppercase;">The Partnership Advantage</h2>
-        <div class="partnership-grid">
-            <div class="partner-item">
-                <h3>Direct From Source</h3>
-                <p>No middlemen. You deal directly with our Surat-based manufacturing unit for better pricing.</p>
-            </div>
-            <div class="partner-item">
-                <h3>Logistics Expertise</h3>
-                <p>Owned delivery fleet ensures your water reaches the venue exactly when needed, 24/7.</p>
-            </div>
-            <div class="partner-item">
-                <h3>Brand Integration</h3>
-                <p>Enhance your event or company identity with our in-house custom label design service.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <h3 style="color:var(--bisleri-green); margin-bottom:15px;">OXIRA - Divera Beverages</h3>
-                <p>BIS Certified Packaged Drinking Water Manufacturer. Serving Surat, Bharuch, and Ahmedabad.</p>
-            </div>
-            <div>
-                <h4>Navigation</h4>
-                <p><a href="products.html" style="color:#666; text-decoration:none; font-size:14px;">Products</a></p>
-                <p><a href="contact.html" style="color:#666; text-decoration:none; font-size:14px;">Enquiry</a></p>
-            </div>
-            <div>
-                <h4>Contact Us</h4>
-                <p style="font-size:14px;">+91 9978394053</p>
-                <p style="font-size:14px;">bharatvastarpara@gmail.com</p>
-            </div>
-        </div>
-        <div style="text-align:center; padding-top:40px; font-size:12px; color:#999;">
-            &copy; 2026 Oxira. Unit: Maruti Industries, Surat.
-        </div>
-    </footer>
+<footer>
+    <p>&copy; 2024 Oxira. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
