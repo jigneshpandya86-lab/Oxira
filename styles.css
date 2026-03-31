@@ -195,11 +195,66 @@ footer p, footer h4 {
     color: var(--white);
 }
 
-/* Responsive */
+/* --- NEW RESPONSIVE MOBILE MENU --- */
+
+/* Hide the hamburger icon on desktop */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1001;
+}
+
+/* Style the three lines of the hamburger */
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-blue);
+    transition: all 0.3s ease;
+}
+
+/* Mobile Screens (Tablets and Phones) */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Add JS hamburger menu for full implementation */
+    .hamburger {
+        display: flex; /* Show hamburger on mobile */
     }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Appears right below the header */
+        left: -100%; /* Hides the menu off-screen to the left */
+        width: 100%;
+        background-color: var(--white);
+        text-align: center;
+        padding: 2rem 0;
+        box-shadow: 0 10px 10px rgba(0, 102, 204, 0.1);
+        transition: left 0.4s ease; /* Smooth sliding animation */
+    }
+
+    /* This class is added by JavaScript when the button is clicked */
+    .nav-links.active {
+        left: 0; 
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0; /* Space out the links more on mobile */
+    }
+
+    /* Animate the hamburger icon into an "X" when open */
+    .hamburger.toggle span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.toggle span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.toggle span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Fix layout for other elements on mobile */
     .grid-2 {
         grid-template-columns: 1fr;
     }
