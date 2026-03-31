@@ -53,6 +53,16 @@
 <footer>
     <p>&copy; 2024 Oxira. All rights reserved.</p>
 </footer>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
+    hamburger.addEventListener('click', () => {
+        // Toggle the menu open/close
+        navLinks.classList.toggle('active');
+        // Animate the hamburger to an X
+        hamburger.classList.toggle('toggle');
+    });
+</script>
 </body>
 </html>
