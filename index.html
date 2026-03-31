@@ -68,6 +68,16 @@
         <p style="margin-top: 2rem; font-size: 0.9rem;">&copy; 2024 Oxira. All rights reserved.</p>
     </div>
 </footer>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
+    hamburger.addEventListener('click', () => {
+        // Toggle the menu open/close
+        navLinks.classList.toggle('active');
+        // Animate the hamburger to an X
+        hamburger.classList.toggle('toggle');
+    });
+</script>
 </body>
 </html>
