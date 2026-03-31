@@ -3,312 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oxira Products - Premium Packaged Water | Divera Beverages Surat</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --bisleri-green: #008A45;
-            --bisleri-dark: #006837;
-            --bisleri-light: #f4fbf7;
-            --text-main: #333333;
-            --text-light: #666666;
-            --white: #ffffff;
-            --border-grey: #e0e0e0;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: var(--text-main);
-            background: var(--white);
-            line-height: 1.6;
-        }
-
-        /* --- Navigation --- */
-        header {
-            background: var(--white);
-            border-bottom: 1px solid var(--border-grey);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-weight: 900;
-            font-size: 26px;
-            color: var(--bisleri-green);
-            text-transform: uppercase;
-        }
-
-        .nav-links { display: flex; list-style: none; gap: 30px; }
-        .nav-links a { 
-            text-decoration: none; 
-            color: var(--text-main); 
-            font-weight: 500; 
-            font-size: 14px; 
-            text-transform: uppercase;
-        }
-        .nav-links a.active { color: var(--bisleri-green); }
-
-        /* --- Page Header --- */
-        .page-header {
-            margin-top: 65px;
-            padding: 80px 20px;
-            background: var(--bisleri-light);
-            text-align: center;
-            border-bottom: 1px solid var(--border-grey);
-        }
-
-        .page-header h1 {
-            font-size: 42px;
-            color: var(--bisleri-dark);
-            font-weight: 900;
-            text-transform: uppercase;
-        }
-
-        /* --- Products Section --- */
-        .products-section {
-            padding: 80px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .product-showcase {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-            margin-bottom: 100px;
-        }
-
-        .product-showcase:nth-child(even) { direction: rtl; }
-        .product-showcase:nth-child(even) > * { direction: ltr; }
-
-        .product-image img {
-            max-width: 100%;
-            height: auto;
-            /* Using a clean filter for product focus */
-            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
-        }
-
-        .product-details .product-label {
-            color: var(--bisleri-green);
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 14px;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .product-details h2 {
-            font-size: 32px;
-            color: var(--bisleri-dark);
-            margin-bottom: 20px;
-            font-weight: 900;
-        }
-
-        .product-description {
-            color: var(--text-light);
-            margin-bottom: 30px;
-            font-size: 17px;
-        }
-
-        .feature-list {
-            list-style: none;
-            margin-bottom: 30px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        .feature-list li {
-            position: relative;
-            padding-left: 25px;
-            font-size: 15px;
-            font-weight: 500;
-        }
-
-        .feature-list li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--bisleri-green);
-            font-weight: 900;
-        }
-
-        .btn-green {
-            background: var(--bisleri-green);
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            font-weight: 700;
-            border-radius: 4px;
-            display: inline-block;
-            transition: 0.3s;
-            text-transform: uppercase;
-        }
-
-        .btn-green:hover { background: var(--bisleri-dark); }
-
-        /* --- Quality/Why Us (Enhanced Content) --- */
-        .quality-commitment {
-            background: #fafafa;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .benefits-grid {
-            max-width: 1200px;
-            margin: 40px auto 0;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .benefit-card {
-            background: white;
-            padding: 40px 20px;
-            border: 1px solid var(--border-grey);
-        }
-
-        .benefit-card h3 {
-            color: var(--bisleri-green);
-            margin-bottom: 15px;
-            text-transform: uppercase;
-        }
-
-        /* --- Footer --- */
-        footer {
-            background: #1a1a1a;
-            color: #ffffff;
-            padding: 60px 20px 20px;
-        }
-
-        .footer-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 40px;
-        }
-
-        @media (max-width: 768px) {
-            .product-showcase, .benefits-grid, .footer-grid { grid-template-columns: 1fr; }
-            .product-showcase:nth-child(even) { direction: ltr; }
-            .feature-list { grid-template-columns: 1fr; }
-        }
-    </style>
+    <title>Products | Oxira Packaged Drinking Water</title>
+    <meta name="description" content="Explore our premium 200ml and 500ml packaged drinking water options. Perfect for events, retail, and hospitality.">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">OXIRA</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html" class="active">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <a href="index.html" class="logo">OXIRA</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="custom-labels.html">Custom Labels</a></li>
+            <li><a href="serve.html">Who We Serve</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section class="page-header">
-        <h1>Product Portfolio</h1>
-        <p>Advanced purification for a healthier life. BIS Certified quality from Divera Beverages.</p>
-    </section>
+<section class="container grid-2">
+    <div>
+        <img src="images/oxira-200ml-bottle.png" alt="Oxira 200ml Water Bottle" style="width:100%; max-width:400px; drop-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+    </div>
+    <div>
+        <h2>Oxira 200ml - The Event Special</h2>
+        <p>Perfectly sized for quick refreshment. Ideal for weddings, large gatherings, and corporate seminars where convenience is key.</p>
+        <ul>
+            <li><p><strong>Packaging:</strong> Box/Carton</p></li>
+            <li><p><strong>Certification:</strong> BIS Approved</p></li>
+            <li><p><strong>Availability:</strong> Wholesale & Custom Label</p></li>
+        </ul>
+        <a href="contact.html" class="btn" style="background: var(--primary-blue); color: white; margin-top: 1rem;">Request Quote</a>
+    </div>
+</section>
 
-    <section class="products-section">
-        <div class="product-showcase">
-            <div class="product-image">
-                <img src="images/oxira-200ml-bottle.png" alt="Oxira 200ml Bottle">
-            </div>
-            <div class="product-details">
-                <span class="product-label">Standard: IS 14543</span>
-                <h2>200ml Mini Pack</h2>
-                <p class="product-description">Ideal for high-end events, conferences, and weddings. Our 200ml packs are designed for zero-wastage and elegant presentation.</p>
-                <ul class="feature-list">
-                    <li>Ozonisation Protected</li>
-                    <li>Tamper-proof Cap</li>
-                    <li>Zero Human Touch</li>
-                    <li>BPA-Free Plastic</li>
-                </ul>
-                <a href="contact.html" class="btn-green">Bulk Order Enquiry</a>
-            </div>
-        </div>
+<section class="container grid-2" style="margin-top: 2rem;">
+    <div style="order: 2;">
+        <img src="images/oxira-500ml-bottle.png" alt="Oxira 500ml Water Bottle" style="width:100%; max-width:400px; drop-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+    </div>
+    <div style="order: 1;">
+        <h2>Oxira 500ml - The Standard Refreshment</h2>
+        <p>Our flagship 500ml bottle. Designed for daily hydration, retail shelves, restaurants, and hotel rooms.</p>
+        <ul>
+            <li><p><strong>Packaging:</strong> Box/Carton</p></li>
+            <li><p><strong>Certification:</strong> BIS Approved</p></li>
+            <li><p><strong>Availability:</strong> Wholesale & Custom Label</p></li>
+        </ul>
+        <a href="contact.html" class="btn" style="background: var(--primary-blue); color: white; margin-top: 1rem;">Request Quote</a>
+    </div>
+</section>
 
-        <div class="product-showcase">
-            <div class="product-image">
-                <img src="images/oxira-500ml-bottle.png" alt="Oxira 500ml Bottle">
-            </div>
-            <div class="product-details">
-                <span class="product-label">Standard: IS 14543</span>
-                <h2>500ml Standard</h2>
-                <p class="product-description">The preferred choice for corporate offices, hotels, and daily retail. Provides the perfect amount of hydration for meetings and travel.</p>
-                <ul class="feature-list">
-                    <li>Multi-Stage RO</li>
-                    <li>UV Sterilized</li>
-                    <li>Mineral Balanced</li>
-                    <li>Recyclable Pet</li>
-                </ul>
-                <a href="contact.html" class="btn-green">Get Wholesale Rates</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="quality-commitment">
-        <h2 style="text-transform:uppercase; color:var(--bisleri-dark)">The Oxira Advantage</h2>
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <h3>B2B Supply</h3>
-                <p>Expert logistics for restaurants and hotels with scheduled daily or weekly delivery patterns.</p>
-            </div>
-            <div class="benefit-card">
-                <h3>Custom Branding</h3>
-                <p>Private labeling available for corporate gifting, weddings, and promotional branding events.</p>
-            </div>
-            <div class="benefit-card">
-                <h3>Modern Lab</h3>
-                <p>In-house testing facility ensuring every batch complies with strict BIS and FSSAI norms.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <h3>OXIRA</h3>
-                <p>Divera Beverages - Gujarat's rising name in premium packaged drinking water.</p>
-                <p style="margin-top:10px; font-size:14px;">Maruti Industries, Surat, GJ 394230</p>
-            </div>
-            <div>
-                <h4>Quick Links</h4>
-                <p><a href="#" style="color:#ccc; text-decoration:none;">Process</a></p>
-                <p><a href="#" style="color:#ccc; text-decoration:none;">Certificates</a></p>
-            </div>
-            <div>
-                <h4>Reach Us</h4>
-                <p>+91 9978394053</p>
-                <p>bharatvastarpara@gmail.com</p>
-            </div>
-        </div>
-        <div style="text-align:center; padding-top:40px; font-size:12px; color:#666;">
-            &copy; 2026 Oxira. All Rights Reserved.
-        </div>
-    </footer>
+<footer>
+    <p>&copy; 2024 Oxira. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
