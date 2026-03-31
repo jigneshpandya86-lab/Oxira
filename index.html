@@ -3,260 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oxira - Premium Mineral Water | Divera Beverages Surat</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --bisleri-green: #008A45;      /* The iconic emerald green */
-            --bisleri-light: #E8F5E9;     /* Soft green tint */
-            --bisleri-dark: #005C2E;
-            --text-dark: #202124;         /* Google/Corporate dark grey */
-            --text-muted: #5F6368;
-            --white: #FFFFFF;
-            --border-grey: #DADCE0;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: var(--text-dark);
-            background-color: var(--white);
-            line-height: 1.6;
-        }
-
-        /* --- Navigation --- */
-        header {
-            background: var(--white);
-            border-bottom: 1px solid var(--border-grey);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 12px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-weight: 900;
-            font-size: 26px;
-            color: var(--bisleri-green);
-            letter-spacing: 1px;
-        }
-
-        .nav-links { display: flex; list-style: none; gap: 30px; }
-        .nav-links a { 
-            text-decoration: none; 
-            color: var(--text-dark); 
-            font-weight: 500; 
-            font-size: 14px; 
-            text-transform: uppercase;
-        }
-        .nav-links a:hover { color: var(--bisleri-green); }
-
-        /* --- Hero Section --- */
-        .hero {
-            padding: 120px 20px 60px;
-            background: linear-gradient(180deg, var(--white) 0%, var(--bisleri-light) 100%);
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            color: var(--bisleri-dark);
-            font-weight: 900;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            max-width: 700px;
-            margin: 0 auto 30px;
-            font-size: 18px;
-            color: var(--text-muted);
-        }
-
-        .btn-main {
-            background: var(--bisleri-green);
-            color: white;
-            padding: 14px 40px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 700;
-            display: inline-block;
-            transition: 0.3s;
-        }
-
-        /* --- New Content: Mission & Vision (Learning from Anjani) --- */
-        .mission-vision {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-
-        .m-v-card h3 {
-            color: var(--bisleri-green);
-            margin-bottom: 15px;
-            border-left: 4px solid var(--bisleri-green);
-            padding-left: 10px;
-        }
-
-        /* --- New Content: Purification Process --- */
-        .process {
-            background: var(--text-dark);
-            color: var(--white);
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .process h2 { color: var(--bisleri-green); margin-bottom: 40px; }
-        
-        .steps-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .step { padding: 20px; border: 1px solid #333; border-radius: 4px; }
-        .step span { color: var(--bisleri-green); font-weight: 900; font-size: 24px; display: block; }
-
-        /* --- Products --- */
-        .products { padding: 80px 20px; text-align: center; }
-        .product-grid {
-            max-width: 1200px;
-            margin: 40px auto;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .product-card {
-            border: 1px solid var(--border-grey);
-            padding: 30px;
-            transition: 0.3s;
-        }
-
-        .product-card:hover { border-color: var(--bisleri-green); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-
-        /* --- Footer --- */
-        footer {
-            background: #f8f9fa;
-            border-top: 1px solid var(--border-grey);
-            padding: 60px 20px 20px;
-        }
-
-        .footer-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 40px;
-        }
-
-        @media (max-width: 768px) {
-            .mission-vision, .product-grid, .footer-grid { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 32px; }
-        }
-    </style>
+    <title>Oxira | Premium Packaged Drinking Water in Surat</title>
+    <meta name="description" content="Oxira by Divera Beverages. BIS Certified 200ml & 500ml packaged drinking water manufacturer in Surat, Gujarat. Bulk supply and custom labels available.">
+    <meta name="keywords" content="packaged drinking water Surat, water bottle manufacturer Gujarat, BIS certified packaged water">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">OXIRA</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Process</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Enquiry</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="images/oxira-logo.png" alt="Oxira Logo" height="40" onerror="this.style.display='none'">
+            OXIRA
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="custom-labels.html">Custom Labels</a></li>
+            <li><a href="serve.html">Who We Serve</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section class="hero">
-        <h1>Hydration Perfected.</h1>
-        <p>Premium BIS certified packaged drinking water by Divera Beverages. We ensure every drop meets the highest standards of safety and purity.</p>
-        <a href="#" class="btn-main">Get a Bulk Quote</a>
-    </section>
+<section class="hero">
+    <h1>Pure Water, Delivered Fresh</h1>
+    <p>Experience the premium taste of BIS Certified packaged drinking water. Manufactured by Divera Beverages in Surat, Gujarat.</p>
+    <a href="products.html" class="btn">Explore Products</a>
+</section>
 
-    <section class="mission-vision">
-        <div class="m-v-card">
-            <h3>Our Mission</h3>
-            <p>To exceed customer expectations by providing top-tier, hygienically packed drinking water that stands the test of time. We focus on total customer satisfaction and sustainable manufacturing.</p>
+<section class="container">
+    <h2 style="text-align: center;">Why Choose Oxira?</h2>
+    <div class="grid-3" style="margin-top: 3rem;">
+        <div class="card">
+            <h3>BIS Certified</h3>
+            <p>Guaranteed purity and safety with strict adherence to Bureau of Indian Standards.</p>
         </div>
-        <div class="m-v-card">
-            <h3>Our Vision</h3>
-            <p>To become Gujarat's most trusted name in hydration, leveraging advanced filtration technology and efficient project management to serve residential and commercial sectors alike.</p>
+        <div class="card">
+            <h3>Advanced Filtration</h3>
+            <p>State-of-the-art multi-stage purification process ensuring every drop is perfect.</p>
         </div>
-    </section>
+        <div class="card">
+            <h3>Custom Labelling</h3>
+            <p>Personalize your 200ml or 500ml bottles for weddings, corporate events, and hotels.</p>
+        </div>
+    </div>
+</section>
 
-    <section class="process">
-        <h2>Our 7-Step Purification</h2>
-        <div class="steps-grid">
-            <div class="step"><span>01</span>Sand Filter</div>
-            <div class="step"><span>02</span>Carbon Filter</div>
-            <div class="step"><span>03</span>Reverse Osmosis</div>
-            <div class="step"><span>04</span>UV Treatment</div>
-            <div class="step"><span>05</span>Ozonisation</div>
-            <div class="step"><span>06</span>Micron Filtration</div>
-            <div class="step"><span>07</span>Hygienic Packing</div>
-        </div>
-    </section>
-
-    <section class="products">
-        <h2>The Oxira Range</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <h3 style="color:var(--bisleri-green)">200ml Bottles</h3>
-                <p>Ideal for Conferences, Weddings, and Airlines. Easy to serve and carry.</p>
-            </div>
-            <div class="product-card">
-                <h3 style="color:var(--bisleri-green)">500ml Bottles</h3>
-                <p>The standard for offices and travel. Perfect balance of quantity and convenience.</p>
-            </div>
-            <div class="product-card">
-                <h3 style="color:var(--bisleri-green)">Custom Branding</h3>
-                <p>Add your corporate identity to our bottles. Premium quality water, your brand.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <h3 style="color:var(--bisleri-green); margin-bottom:15px;">OXIRA - Divera Beverages</h3>
-                <p>Unit-I, Maruti Industries, Gothan Tilavat Bridge, Surat - 394230.</p>
-                <p>BIS Certified | GSTIN: 24AAWFD5711H1ZB</p>
-            </div>
-            <div>
-                <h4>Services</h4>
-                <p>Event Supply</p>
-                <p>Corporate Delivery</p>
-                <p>Custom Labeling</p>
-            </div>
-            <div>
-                <h4>Contact</h4>
-                <p>+91 9978394053</p>
-                <p>bharatvastarpara@gmail.com</p>
-            </div>
-        </div>
-        <div style="text-align:center; padding-top:40px; font-size:12px; color:var(--text-muted);">
-            &copy; 2026 Oxira. All Rights Reserved.
-        </div>
-    </footer>
+<footer>
+    <div class="container">
+        <h4>Divera Beverages</h4>
+        <p>Gothan Tilavat Bridge, Surat, Gujarat</p>
+        <p>Phone: +91 9978394053 | Email: bharatvastarpara@gmail.com</p>
+        <p>GSTIN: 24AAWFD5711H1ZB</p>
+        <p style="margin-top: 2rem; font-size: 0.9rem;">&copy; 2024 Oxira. All rights reserved.</p>
+    </div>
+</footer>
 
 </body>
 </html>
